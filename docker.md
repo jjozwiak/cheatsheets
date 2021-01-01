@@ -4,8 +4,15 @@ docker run
 
 ## Dockerfile
 
-| Commands   |   | 
+| Instructions  |   | 
 |---|---|
+| FROM |  |
+| ADD | |
+| COPY | |
 | RUN  |   |
 | CMD  |   |
-|   |   |
+| ENTRYPOINT |   |
+| ENV | |
+| VOLUME | |
+| LABEL | |
+| EXPOSE | |
