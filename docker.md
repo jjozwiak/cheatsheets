@@ -20,7 +20,7 @@
 
 | Instructions  |   | |
 |---|---|---|
-| FROM | FROM <image> | defines base image to use |
+| FROM | FROM \<image\> | defines base image to use |
 | WORKDIR | WORKDIR /path/to/directory | sets current working directory for RUN, CMD, ENTRYPOINT, COPY, and ADD instructions |
 | ADD | | |
 | COPY | | |
