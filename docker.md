@@ -16,6 +16,7 @@
 | ``` docker build ``` ||
 | ``` docker start ``` ||
 | ``` docker stop ``` ||
+| ``` docker commit ``` ||
 
 
 ## Flags
