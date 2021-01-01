@@ -11,10 +11,11 @@
 
 ## Flags
 
-| Flag | Description |
-|---|---|
-| -it | interactive |
-| --rm | removes container after exiting |
+| Flag | Example | Description |
+|---|---|---|
+| -it | | interactive |
+| --rm | | removes container after exiting |
+| -p | 5000:80 | port publishing where mapping format is \<host\>:\<container\> |
 
 ## Dockerfile
 
@@ -27,7 +28,7 @@
 | RUN  | RUN apt-get update (shell form), RUN ["executable", "param1", "param2"] (exec form)  | Executes any command in a new layer on top of current image **during build time**. |
 | CMD  | CMD curl, CMD ["executable", "param1", "param2"]  | Executes command when container is **running** |
 | ENTRYPOINT | |   |
-| ENV | | |
-| VOLUME | | |
+| ENV | ENV LOGS_DIR="/var/log" | Sets environment variables of a container. |
+| VOLUME | VOLUME /var/logs/nginx | Creates a directory on the host and mounts it on the container. |
 | LABEL | | |
-| EXPOSE | | |
+| EXPOSE | EXPOSE 80, EXPOSE 53/tcp | Tells Docker the container listens for the specified network ports at runtime. EXPOSE does not publish the port, for this you need to use the -p flag |
