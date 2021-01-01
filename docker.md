@@ -11,21 +11,21 @@
 
 ## Flags
 
-| Flag | Desc |
+| Flag | Description |
 |---|---|
 | -it | interactive |
 | --rm | removes container after exiting |
 
 ## Dockerfile
 
-| Instructions  |   | |
+| Instructions  | Example  | Description |
 |---|---|---|
-| FROM | FROM \<image\> | defines base image to use |
-| WORKDIR | WORKDIR /path/to/directory | sets current working directory for RUN, CMD, ENTRYPOINT, COPY, and ADD instructions |
-| ADD | | |
-| COPY | | |
-| RUN  |   | |
-| CMD  |   | |
+| FROM | FROM \<image\> | Defines base image to use |
+| WORKDIR | WORKDIR /path/to/directory | Sets current working directory for RUN, CMD, ENTRYPOINT, COPY, and ADD instructions |
+| ADD | ADD index.html /var/www/html | Transfer files from host to container. Supports tarball auto extraction and remote URLs. |
+| COPY | COPY index.html /var/www/html | Transfer files from host to container. |
+| RUN  | RUN apt-get update (shell form), RUN ["executable", "param1", "param2"] (exec form)  | Executes any command in a new layer on top of current image **during build time**. |
+| CMD  | CMD curl, CMD ["executable", "param1", "param2"]  | Executes command when container is **running** |
 | ENTRYPOINT | |   |
 | ENV | | |
 | VOLUME | | |
