@@ -26,6 +26,8 @@
 | --rm | | removes container after exiting |
 | -p | 5000:80 | port publishing where mapping format is \<host\>:\<container\> |
 | -v | $(pwd):/var/www/html | set up a volume \<host\>:\<container\> |
+| -d | detach |
+| -h | help |
 
 ## Dockerfile
 
